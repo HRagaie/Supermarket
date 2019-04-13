@@ -1,5 +1,3 @@
-import System.Random
-import System.IO.Unsafe
 users = ["user1","user2","user3","user4"]
 items = ["Banana","Orange","Kiwi","Apple","PineApple","Lemon"] 
 purchasesHistory = [("user1",[["Banana","Orange","Kiwi"],["Banana","Orange","Apple"]]),

@@ -3,14 +3,8 @@ import System.IO.Unsafe
 users = ["user1","user2","user3","user4"]
 items = ["Banana","Orange","Kiwi","Apple","PineApple","Lemon"] 
 purchasesHistory = [("user1",[["Banana","Orange","Kiwi"],["Banana","Orange","Apple"]]),
-					("user2",[["Orange","PineApple"],["Apple","PineApple"]]), 
-					("user3",[["Kiwi","Orange"]]),
 					("user4",[])]
 
-
-
-randomZeroToX :: Int -> Int
-randomZeroToX x= unsafePerformIO (getStdRandom (randomR (0, x)))
 
 createEmptyFreqList :: [a] -> [(a, [b])]
 createEmptyFreqList [] = []
@@ -60,5 +54,4 @@ incrementCount x ((item,count):ys) = if x ==item then ((item,1+count):ys) else i
 --count = 1
 --ys = ("Kiwi",[1])
 --if x = item then (("Orange",1+1),ys) else incrementCount x ys
-	
---purchasesIntersection :: Eq a => [(a,[(a,Int)])] -> [(a,[(a,[(a,Int)])])] -> [[(a,[(a,Int)])]]
+

@@ -6,7 +6,6 @@ public class GameView extends JFrame {
 	private JPanel unitButtonPanel;
 	private JPanel disasterPanel;
 	private JTextArea disasterDisplay;
-	private JButton cycle;
 	private JButton ambulanceUnit;
 	private JButton diseaseControlUnit;
 	private JButton gasControlUnit;
@@ -59,11 +58,11 @@ public class GameView extends JFrame {
 		availableUnits.add(unitButtonPanel);
 		textPanel.add(availableUnits);
 
-		JTextArea respondingUnits = new JTextArea(4,4);
+		JTextArea respondingUnits = new JTextArea(2,2);
 		//respondingUnits.setPreferredSize(new Dimension(200, 200));
 		textPanel.add(respondingUnits);
 
-		JTextArea treatingUnits = new JTextArea(4,4);
+		JTextArea treatingUnits = new JTextArea(2,2);
 		//treatingUnits.setPreferredSize(new Dimension(200, 200));
 		textPanel.add(treatingUnits);
 
